@@ -5,7 +5,7 @@ A MERN procurement portal for supplier onboarding and review, vendor performance
 ## Project folders
 
 - `frontend/` - React + Vite procurement dashboard.
-- `backend/` - Express REST API and Mongoose models.
+- `backend/` - Express REST API and Mongoose models. 
 - `database/` - MongoDB Docker setup, sample records, and database instructions.
 
 ## Run locally
