@@ -1,0 +1,13 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: vendor-management-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - vendor-management-data:/data/db
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/01-init-mongo.js:ro
+
+volumes:
+  vendor-management-data:
